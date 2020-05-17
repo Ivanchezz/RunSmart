@@ -1,12 +1,12 @@
 {
-  "name": "uber_course",
+  "name": "runsmart",
   "version": "1.0.0",
-  "description": "",
+  "description": "RunSmart",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ivanchezz",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
@@ -17,5 +17,13 @@
     "gulp-cli": "^2.2.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanchezz/RunSmart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ivanchezz/RunSmart/issues"
+  },
+  "homepage": "https://github.com/Ivanchezz/RunSmart#readme"
 }
