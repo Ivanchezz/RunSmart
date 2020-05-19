@@ -53,7 +53,36 @@
             text-transform: uppercase;
         }
     }
-}
-@media (max-width: 1200px) {
-    
+    @media (max-width: 320px) {
+        padding: 10px 0 45px 0;
+        &__wrapper{
+            align-items: center;
+            margin-top: 45px;
+            text-align: center;
+        }
+        &__header {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__subheader {
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: 300;
+        }
+        &__icons {
+            margin-top: 0;
+            width: 106px;
+            flex-direction: column;
+        }
+        &__icon {
+            font-size: 12px;
+            margin-top: 33px;
+            img {
+                margin: 0 auto 5px auto;
+            }
+        }    
+        &__link {
+            font-size: 12px;
+        }
+    }
 }
