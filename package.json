@@ -1,8 +1,8 @@
-{
+{ 
   "name": "runsmart",
   "version": "1.0.0",
   "description": "RunSmart",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,20 +10,18 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ivanchezz/RunSmart.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Ivanchezz/RunSmart/issues"
-  },
-  "homepage": "https://github.com/Ivanchezz/RunSmart#readme"
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
