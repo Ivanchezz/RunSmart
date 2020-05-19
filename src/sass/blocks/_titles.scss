@@ -5,4 +5,7 @@
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+    @media (max-width: 425px) {
+        font-size: 26px;
+    }
     }

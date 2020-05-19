@@ -14,15 +14,25 @@
         height: 50px;
         font-size: 16px;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 425px) {
         width: 100px;
         height: 20px;
         font-size: 8px;
         &_main {
+            margin-top: 55px;
+            width: 240px;
+            height: 45px;
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 375px) {
+        &_main {
+            margin-top: 44px;
+        }
+    }
+    @media (max-width: 320px) {
+        &_main {
             margin-top: 33px;
-            width: 200px;
-            height: 35px;
-            font-size: 12px;
         }
     }
 }
