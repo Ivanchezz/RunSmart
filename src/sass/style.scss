@@ -23,16 +23,16 @@
 }
 @media (max-width: 425px) {
     .container {
-        max-width: 340px;
+        min-width: 340px;
     }
 }
 @media (max-width: 375px) {
     .container {
-        max-width: 290px;
+        min-width: 290px;
     }
 }
 @media (max-width: 320px) {
     .container {
-        max-width: 280px;
+        min-width: 280px;
     }
 }
