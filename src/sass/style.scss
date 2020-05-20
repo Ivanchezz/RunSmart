@@ -2,37 +2,30 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
-.container {
-    max-width: 950px;
-    margin: 0 auto;
-}
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/titles';
-@media (max-width: 992px) {
-    .container {
-        max-width: 950px;
+@import 'blocks/consultation';
+@import 'blocks/forms';
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+        max-width: 940px;
+    }
+    @media (max-width: 768px) {
+         max-width: 710px;
+    }
+    @media (max-width: 425px) {
+        max-width: 390px;
+    }
+    @media (max-width: 375px) {
+        max-width: 340px;
+    }
+    @media (max-width: 320px) {
+        max-width: 290px;
     }
 }
-@media (max-width: 768px) {
-    .container {
-        max-width: 700px;
-    }
-}
-@media (max-width: 425px) {
-    .container {
-        min-width: 340px;
-    }
-}
-@media (max-width: 375px) {
-    .container {
-        min-width: 290px;
-    }
-}
-@media (max-width: 320px) {
-    .container {
-        min-width: 280px;
-    }
-}
+
