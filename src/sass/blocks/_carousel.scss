@@ -2,8 +2,11 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -20,5 +23,33 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style: none;
+            button {
+                background: #fff;
+                border-style: solid;
+                border-width: medium;
+                border-color: $text-color2;
+                border-radius: 50%;
+                font-size: 0;
+                height: 20px;
+                width: 20px;
+                margin: 10px;
+                outline: none;
+            }
+        }
+        .slick-active {
+            button{
+                border: none;
+                background: $main-color;
+                height: 22px;
+                width: 22px;
+            }
+        }
     }
 }
