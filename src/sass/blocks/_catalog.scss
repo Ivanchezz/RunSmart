@@ -1,10 +1,11 @@
 .catalog {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     &__tabs {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 70px;
+        padding: 0;
         list-style-type: none;
     }
     &__tab {
@@ -37,6 +38,7 @@
     }
     &__content {
         display: none;
+        justify-content: center;
         flex-wrap: wrap;
         margin-top: 60px;
         &_active {
@@ -44,12 +46,13 @@
         }
     }
     &-item {
+        position: relative;
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
-        margin: 0 10px 20px 5px;
+        margin: 0 7px 20px 7px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -126,24 +129,27 @@
         &__content {
             width: 50%;
             margin-right: 0;
+            padding: 0 20px;
             transform: translateX(-100%);
             transition: 0.5s all;
             &_active {
-                margin-right: 20px;
+                margin-right: 34px;
+                padding: 0;
                 transform: translateX(0%); 
             }
         }
         &__list {
             position: relative;
             width: 50%;
-            margin-left: 20px;
+            margin-left: 0px;
             margin-bottom: 0;
-            padding-left: 0;
+            padding: 0 20px 0 15px;
             transform: translateX(0%);
             transition: 0.5s all;
             list-style-type: none;
             &_active {
                 margin-left: 0;
+                padding: 0 20px 0 15px;
                 transform: translateX(-100%);
             }
             li {
@@ -177,6 +183,61 @@
             &:hover {
                 color: $main-color;
             }
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 0 20px;
+        &__tabs {
+            flex-direction: column;
+            margin-top: 65px;
+        }
+        &__tab {
+            margin: 5px;
+        }
+        &__content_active {
+            margin-top: 65px;
+        }
+    }
+    @media (max-width: 425px) {
+        padding: 0 16px;
+        &__tabs {
+            flex-direction: column;
+            margin-top: 60px;
+        }
+        &__tab {
+            margin: 5px;
+        }
+        &__content_active {
+            margin-top: 60px;
+        }
+        &-item {
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        padding: 0 13px;
+        &__tabs {
+            margin-top: 55px;
+        }
+        &__tab {
+            margin: 5px;
+        }
+        &__content_active {
+            margin-top: 55px;
+        }
+    }
+    @media (max-width: 320px) {
+        padding: 0 11px;
+        &__tabs {
+            margin-top: 45px;
+        }
+        &__tab {
+            margin: 5px;
+        }
+        &__content_active {
+            margin-top: 45px;
         }
     }
 }
